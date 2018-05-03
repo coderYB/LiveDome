@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20413CC0130AC14F0929A568 /* libPods-LiveDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BA5B75D6F0D742E0A9D756 /* libPods-LiveDome.a */; };
+		EA85FDCB2099E1360012EDC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDCA2099E1360012EDC7 /* AppDelegate.m */; };
+		EA85FDCE2099E1360012EDC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDCD2099E1360012EDC7 /* ViewController.m */; };
+		EA85FDD12099E1360012EDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA85FDCF2099E1360012EDC7 /* Main.storyboard */; };
+		EA85FDD32099E1390012EDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA85FDD22099E1390012EDC7 /* Assets.xcassets */; };
+		EA85FDD62099E1390012EDC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA85FDD42099E1390012EDC7 /* LaunchScreen.storyboard */; };
+		EA85FDD92099E1390012EDC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDD82099E1390012EDC7 /* main.m */; };
+		EA85FDEC2099E1D60012EDC7 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDEA2099E1D50012EDC7 /* BaseNavigationController.swift */; };
+		EA85FDED2099E1D60012EDC7 /* RootTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDEB2099E1D60012EDC7 /* RootTabbarViewController.swift */; };
+		EA85FDF22099E39B0012EDC7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDF12099E39B0012EDC7 /* BaseViewController.m */; };
+		EA85FDF52099E41A0012EDC7 /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDF42099E41A0012EDC7 /* FocusViewController.m */; };
+		EA85FDF82099E4250012EDC7 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FDF72099E4250012EDC7 /* RecommendViewController.m */; };
+		EA85FDFB2099E7B40012EDC7 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA85FDF92099E7AC0012EDC7 /* IJKMediaFramework.framework */; };
+		EA85FDFC2099E7B40012EDC7 /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA85FDF92099E7AC0012EDC7 /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA85FDFF2099E7CF0012EDC7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA85FDFE2099E7CF0012EDC7 /* AVFoundation.framework */; };
+		EA85FE012099E7D90012EDC7 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA85FE002099E7D90012EDC7 /* libbz2.tbd */; };
+		EA85FE032099E7E10012EDC7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA85FE022099E7E10012EDC7 /* libz.tbd */; };
+		EA85FE072099E83C0012EDC7 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FE062099E83C0012EDC7 /* NetWorkTools.m */; };
+		EA85FE112099EA790012EDC7 /* RecommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FE102099EA790012EDC7 /* RecommendTableViewCell.m */; };
+		EA85FE142099EAB90012EDC7 /* YBHeartFlyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FE132099EAB90012EDC7 /* YBHeartFlyView.m */; };
+		EA85FE172099EB180012EDC7 /* RecommendListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA85FE162099EB180012EDC7 /* RecommendListModel.m */; };
+		EA990EC1209AAC3100E2CA53 /* FocusListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA990EC0209AAC3100E2CA53 /* FocusListModel.m */; };
+		EA990EC4209AAC7A00E2CA53 /* FocusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA990EC3209AAC7A00E2CA53 /* FocusTableViewCell.m */; };
+		EA990EC7209AAECC00E2CA53 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA990EC6209AAECC00E2CA53 /* PlayerViewController.m */; };
+		EA990ECD209AF3BB00E2CA53 /* PushStremViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA990ECC209AF3BB00E2CA53 /* PushStremViewController.m */; };
+		EA990ED0209B014B00E2CA53 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA990ECF209B014B00E2CA53 /* StartViewController.m */; };
+		EA990ED3209B044000E2CA53 /* StartLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA990ED2209B044000E2CA53 /* StartLiveView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA85FDFD2099E7B50012EDC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA85FDFC2099E7B40012EDC7 /* IJKMediaFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		812137098F1201E96400BF4A /* Pods-LiveDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveDome/Pods-LiveDome.debug.xcconfig"; sourceTree = "<group>"; };
+		A5220741013BBC28A74C579C /* Pods-LiveDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveDome/Pods-LiveDome.release.xcconfig"; sourceTree = "<group>"; };
+		B7BA5B75D6F0D742E0A9D756 /* libPods-LiveDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA85FDC62099E1360012EDC7 /* LiveDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA85FDC92099E1360012EDC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA85FDCA2099E1360012EDC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA85FDCC2099E1360012EDC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA85FDCD2099E1360012EDC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA85FDD02099E1360012EDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA85FDD22099E1390012EDC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA85FDD52099E1390012EDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA85FDD72099E1390012EDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA85FDD82099E1390012EDC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA85FDE92099E1D40012EDC7 /* LiveDome-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveDome-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA85FDEA2099E1D50012EDC7 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		EA85FDEB2099E1D60012EDC7 /* RootTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabbarViewController.swift; sourceTree = "<group>"; };
+		EA85FDEE2099E1FB0012EDC7 /* LiveDome.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveDome.pch; sourceTree = "<group>"; };
+		EA85FDEF2099E3640012EDC7 /* BaseHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
+		EA85FDF02099E39B0012EDC7 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		EA85FDF12099E39B0012EDC7 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		EA85FDF32099E41A0012EDC7 /* FocusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusViewController.h; sourceTree = "<group>"; };
+		EA85FDF42099E41A0012EDC7 /* FocusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
+		EA85FDF62099E4250012EDC7 /* RecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		EA85FDF72099E4250012EDC7 /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		EA85FDF92099E7AC0012EDC7 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		EA85FDFE2099E7CF0012EDC7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA85FE002099E7D90012EDC7 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		EA85FE022099E7E10012EDC7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EA85FE052099E83C0012EDC7 /* NetWorkTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
+		EA85FE062099E83C0012EDC7 /* NetWorkTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
+		EA85FE0F2099EA790012EDC7 /* RecommendTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendTableViewCell.h; sourceTree = "<group>"; };
+		EA85FE102099EA790012EDC7 /* RecommendTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendTableViewCell.m; sourceTree = "<group>"; };
+		EA85FE122099EAB90012EDC7 /* YBHeartFlyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBHeartFlyView.h; sourceTree = "<group>"; };
+		EA85FE132099EAB90012EDC7 /* YBHeartFlyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBHeartFlyView.m; sourceTree = "<group>"; };
+		EA85FE152099EB180012EDC7 /* RecommendListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendListModel.h; sourceTree = "<group>"; };
+		EA85FE162099EB180012EDC7 /* RecommendListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendListModel.m; sourceTree = "<group>"; };
+		EA990EBF209AAC3100E2CA53 /* FocusListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusListModel.h; sourceTree = "<group>"; };
+		EA990EC0209AAC3100E2CA53 /* FocusListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusListModel.m; sourceTree = "<group>"; };
+		EA990EC2209AAC7A00E2CA53 /* FocusTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusTableViewCell.h; sourceTree = "<group>"; };
+		EA990EC3209AAC7A00E2CA53 /* FocusTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusTableViewCell.m; sourceTree = "<group>"; };
+		EA990EC5209AAECC00E2CA53 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		EA990EC6209AAECC00E2CA53 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		EA990ECB209AF3BB00E2CA53 /* PushStremViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushStremViewController.h; sourceTree = "<group>"; };
+		EA990ECC209AF3BB00E2CA53 /* PushStremViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushStremViewController.m; sourceTree = "<group>"; };
+		EA990ECE209B014B00E2CA53 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		EA990ECF209B014B00E2CA53 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		EA990ED1209B044000E2CA53 /* StartLiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartLiveView.h; sourceTree = "<group>"; };
+		EA990ED2209B044000E2CA53 /* StartLiveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartLiveView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA85FDC32099E1360012EDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA85FE032099E7E10012EDC7 /* libz.tbd in Frameworks */,
+				EA85FE012099E7D90012EDC7 /* libbz2.tbd in Frameworks */,
+				EA85FDFF2099E7CF0012EDC7 /* AVFoundation.framework in Frameworks */,
+				20413CC0130AC14F0929A568 /* libPods-LiveDome.a in Frameworks */,
+				EA85FDFB2099E7B40012EDC7 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABEEFB12741E62C52B5DA0F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FE022099E7E10012EDC7 /* libz.tbd */,
+				EA85FE002099E7D90012EDC7 /* libbz2.tbd */,
+				EA85FDFE2099E7CF0012EDC7 /* AVFoundation.framework */,
+				B7BA5B75D6F0D742E0A9D756 /* libPods-LiveDome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD75CF6EB828DB7746FF99A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				812137098F1201E96400BF4A /* Pods-LiveDome.debug.xcconfig */,
+				A5220741013BBC28A74C579C /* Pods-LiveDome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA85FDBD2099E1360012EDC7 = {
+			isa = PBXGroup;
+			children = (
+				EA85FDC82099E1360012EDC7 /* LiveDome */,
+				EA85FDC72099E1360012EDC7 /* Products */,
+				AD75CF6EB828DB7746FF99A4 /* Pods */,
+				ABEEFB12741E62C52B5DA0F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA85FDC72099E1360012EDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FDC62099E1360012EDC7 /* LiveDome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA85FDC82099E1360012EDC7 /* LiveDome */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FE042099E8210012EDC7 /* NetWork */,
+				EA85FDE82099E1A40012EDC7 /* Base */,
+				EA85FDDF2099E1A40012EDC7 /* Class */,
+				EA85FDC92099E1360012EDC7 /* AppDelegate.h */,
+				EA85FDCA2099E1360012EDC7 /* AppDelegate.m */,
+				EA85FDCC2099E1360012EDC7 /* ViewController.h */,
+				EA85FDCD2099E1360012EDC7 /* ViewController.m */,
+				EA85FDCF2099E1360012EDC7 /* Main.storyboard */,
+				EA85FDD22099E1390012EDC7 /* Assets.xcassets */,
+				EA85FDD42099E1390012EDC7 /* LaunchScreen.storyboard */,
+				EA85FDD72099E1390012EDC7 /* Info.plist */,
+				EA85FDD82099E1390012EDC7 /* main.m */,
+			);
+			path = LiveDome;
+			sourceTree = "<group>";
+		};
+		EA85FDDF2099E1A40012EDC7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EA990EC8209AF38F00E2CA53 /* PushStrem */,
+				EA85FE082099E9740012EDC7 /* Player */,
+				EA85FDE02099E1A40012EDC7 /* Foucs */,
+				EA85FDE42099E1A40012EDC7 /* Recommend */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		EA85FDE02099E1A40012EDC7 /* Foucs */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FDE12099E1A40012EDC7 /* Controller */,
+				EA85FDE22099E1A40012EDC7 /* Model */,
+				EA85FDE32099E1A40012EDC7 /* View */,
+			);
+			path = Foucs;
+			sourceTree = "<group>";
+		};
+		EA85FDE12099E1A40012EDC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FDF32099E41A0012EDC7 /* FocusViewController.h */,
+				EA85FDF42099E41A0012EDC7 /* FocusViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA85FDE22099E1A40012EDC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA990EBF209AAC3100E2CA53 /* FocusListModel.h */,
+				EA990EC0209AAC3100E2CA53 /* FocusListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA85FDE32099E1A40012EDC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA990EC2209AAC7A00E2CA53 /* FocusTableViewCell.h */,
+				EA990EC3209AAC7A00E2CA53 /* FocusTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA85FDE42099E1A40012EDC7 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FDE52099E1A40012EDC7 /* Controller */,
+				EA85FDE62099E1A40012EDC7 /* Model */,
+				EA85FDE72099E1A40012EDC7 /* View */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		EA85FDE52099E1A40012EDC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FDF62099E4250012EDC7 /* RecommendViewController.h */,
+				EA85FDF72099E4250012EDC7 /* RecommendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA85FDE62099E1A40012EDC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FE152099EB180012EDC7 /* RecommendListModel.h */,
+				EA85FE162099EB180012EDC7 /* RecommendListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA85FDE72099E1A40012EDC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FE0F2099EA790012EDC7 /* RecommendTableViewCell.h */,
+				EA85FE102099EA790012EDC7 /* RecommendTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA85FDE82099E1A40012EDC7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FDF92099E7AC0012EDC7 /* IJKMediaFramework.framework */,
+				EA85FDEA2099E1D50012EDC7 /* BaseNavigationController.swift */,
+				EA85FDEB2099E1D60012EDC7 /* RootTabbarViewController.swift */,
+				EA85FDE92099E1D40012EDC7 /* LiveDome-Bridging-Header.h */,
+				EA85FDEE2099E1FB0012EDC7 /* LiveDome.pch */,
+				EA85FDEF2099E3640012EDC7 /* BaseHeader.h */,
+				EA85FDF02099E39B0012EDC7 /* BaseViewController.h */,
+				EA85FDF12099E39B0012EDC7 /* BaseViewController.m */,
+				EA85FE122099EAB90012EDC7 /* YBHeartFlyView.h */,
+				EA85FE132099EAB90012EDC7 /* YBHeartFlyView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EA85FE042099E8210012EDC7 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FE052099E83C0012EDC7 /* NetWorkTools.h */,
+				EA85FE062099E83C0012EDC7 /* NetWorkTools.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		EA85FE082099E9740012EDC7 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EA85FE092099E9740012EDC7 /* Controller */,
+				EA85FE0C2099E9740012EDC7 /* Model */,
+				EA85FE0D2099E9740012EDC7 /* View */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		EA85FE092099E9740012EDC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA990EC5209AAECC00E2CA53 /* PlayerViewController.h */,
+				EA990EC6209AAECC00E2CA53 /* PlayerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA85FE0C2099E9740012EDC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA85FE0D2099E9740012EDC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA990EC8209AF38F00E2CA53 /* PushStrem */ = {
+			isa = PBXGroup;
+			children = (
+				EA990ECA209AF3A500E2CA53 /* Controller */,
+				EA990EC9209AF39F00E2CA53 /* View */,
+			);
+			path = PushStrem;
+			sourceTree = "<group>";
+		};
+		EA990EC9209AF39F00E2CA53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA990ED1209B044000E2CA53 /* StartLiveView.h */,
+				EA990ED2209B044000E2CA53 /* StartLiveView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA990ECA209AF3A500E2CA53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA990ECB209AF3BB00E2CA53 /* PushStremViewController.h */,
+				EA990ECC209AF3BB00E2CA53 /* PushStremViewController.m */,
+				EA990ECE209B014B00E2CA53 /* StartViewController.h */,
+				EA990ECF209B014B00E2CA53 /* StartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA85FDC52099E1360012EDC7 /* LiveDome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA85FDDC2099E1390012EDC7 /* Build configuration list for PBXNativeTarget "LiveDome" */;
+			buildPhases = (
+				05005E9E50169C1E38EE639C /* [CP] Check Pods Manifest.lock */,
+				EA85FDC22099E1360012EDC7 /* Sources */,
+				EA85FDC32099E1360012EDC7 /* Frameworks */,
+				EA85FDC42099E1360012EDC7 /* Resources */,
+				90C37C16EC74978A064EC7C7 /* [CP] Copy Pods Resources */,
+				EA85FDFD2099E7B50012EDC7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveDome;
+			productName = LiveDome;
+			productReference = EA85FDC62099E1360012EDC7 /* LiveDome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA85FDBE2099E1360012EDC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = zbwx;
+				TargetAttributes = {
+					EA85FDC52099E1360012EDC7 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = EA85FDC12099E1360012EDC7 /* Build configuration list for PBXProject "LiveDome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA85FDBD2099E1360012EDC7;
+			productRefGroup = EA85FDC72099E1360012EDC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA85FDC52099E1360012EDC7 /* LiveDome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA85FDC42099E1360012EDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA85FDD62099E1390012EDC7 /* LaunchScreen.storyboard in Resources */,
+				EA85FDD32099E1390012EDC7 /* Assets.xcassets in Resources */,
+				EA85FDD12099E1360012EDC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05005E9E50169C1E38EE639C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveDome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C37C16EC74978A064EC7C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LiveDome/Pods-LiveDome-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveDome/Pods-LiveDome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA85FDC22099E1360012EDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA85FE142099EAB90012EDC7 /* YBHeartFlyView.m in Sources */,
+				EA990ED3209B044000E2CA53 /* StartLiveView.m in Sources */,
+				EA85FDEC2099E1D60012EDC7 /* BaseNavigationController.swift in Sources */,
+				EA85FDF22099E39B0012EDC7 /* BaseViewController.m in Sources */,
+				EA85FDCE2099E1360012EDC7 /* ViewController.m in Sources */,
+				EA85FDED2099E1D60012EDC7 /* RootTabbarViewController.swift in Sources */,
+				EA990ED0209B014B00E2CA53 /* StartViewController.m in Sources */,
+				EA85FDD92099E1390012EDC7 /* main.m in Sources */,
+				EA85FE172099EB180012EDC7 /* RecommendListModel.m in Sources */,
+				EA85FE072099E83C0012EDC7 /* NetWorkTools.m in Sources */,
+				EA85FE112099EA790012EDC7 /* RecommendTableViewCell.m in Sources */,
+				EA85FDF82099E4250012EDC7 /* RecommendViewController.m in Sources */,
+				EA990EC4209AAC7A00E2CA53 /* FocusTableViewCell.m in Sources */,
+				EA85FDCB2099E1360012EDC7 /* AppDelegate.m in Sources */,
+				EA85FDF52099E41A0012EDC7 /* FocusViewController.m in Sources */,
+				EA990EC1209AAC3100E2CA53 /* FocusListModel.m in Sources */,
+				EA990ECD209AF3BB00E2CA53 /* PushStremViewController.m in Sources */,
+				EA990EC7209AAECC00E2CA53 /* PlayerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA85FDCF2099E1360012EDC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA85FDD02099E1360012EDC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA85FDD42099E1390012EDC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA85FDD52099E1390012EDC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA85FDDA2099E1390012EDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA85FDDB2099E1390012EDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA85FDDD2099E1390012EDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812137098F1201E96400BF4A /* Pods-LiveDome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YSDAFD6X6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveDome/Base",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LiveDome/Base/LiveDome.pch";
+				INFOPLIST_FILE = LiveDome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZBWX.LiveDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveDome/Base/LiveDome-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA85FDDE2099E1390012EDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5220741013BBC28A74C579C /* Pods-LiveDome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YSDAFD6X6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveDome/Base",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LiveDome/Base/LiveDome.pch";
+				INFOPLIST_FILE = LiveDome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZBWX.LiveDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveDome/Base/LiveDome-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA85FDC12099E1360012EDC7 /* Build configuration list for PBXProject "LiveDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA85FDDA2099E1390012EDC7 /* Debug */,
+				EA85FDDB2099E1390012EDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA85FDDC2099E1390012EDC7 /* Build configuration list for PBXNativeTarget "LiveDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA85FDDD2099E1390012EDC7 /* Debug */,
+				EA85FDDE2099E1390012EDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA85FDBE2099E1360012EDC7 /* Project object */;
+}
