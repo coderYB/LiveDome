@@ -23,8 +23,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:YBNameImage(@"bg_zbfx")]];
     [self start];
+
+
 }
 - (void)start{
     StartLiveView *view = [[StartLiveView alloc] initWithFrame:self.view.bounds];

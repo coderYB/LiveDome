@@ -23,13 +23,19 @@
     // 添加下拉刷新
     [self addRefresh];
 }
-
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
 - (void)bulidTableView{
     _contentTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _contentTableView.delegate = self;
     _contentTableView.dataSource = self;
     _contentTableView.rowHeight = [UIScreen mainScreen].bounds.size.width * Ratio + 1;
     _contentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _contentTableView.estimatedRowHeight = 0;
+    _contentTableView.estimatedSectionHeaderHeight = 0;
+    _contentTableView.estimatedSectionFooterHeight = 0;
     [self.view addSubview:_contentTableView];
     [_contentTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(0);
@@ -91,7 +97,11 @@
         [tempSelf.contentTableView.mj_header endRefreshing];
         [tempSelf.contentTableView.mj_footer endRefreshing];
         [tempSelf.contentTableView reloadData];
-        
+        if ([json[@"data"][@"list"] isKindOfClass:[NSNull class]] || [(NSArray *)json[@"data"][@"list"] count] == 0 || [json[@"data"]  isEqual: @""] || (json&&([[json objectForKey:@"code"] integerValue]==106))) {//变为没有更多数据的状态
+            [tempSelf.contentTableView.mj_footer endRefreshingWithNoMoreData];
+        } else {
+            [tempSelf.contentTableView.mj_footer endRefreshing];
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [tempSelf.contentTableView.mj_header endRefreshing];
         [tempSelf.contentTableView.mj_footer endRefreshing];
@@ -122,14 +132,14 @@
     playerVc.liveUrl = PlayerModel.flv;
     playerVc.imageUrl = PlayerModel.photo;
     [self.navigationController pushViewController:playerVc animated:true];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 
 - (NSMutableArray *)dataList{
     if (!_dataList) {
         _dataList = [NSMutableArray array];
-    }return _dataList;
+    }
+    return _dataList;
 }
 
 - (void)didReceiveMemoryWarning {

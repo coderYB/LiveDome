@@ -91,21 +91,6 @@
     [playBtn.layer setShadowRadius:1];
     [self.view addSubview:playBtn];
     
-    
-    
-    UIButton * giftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [giftBtn setFrame:CGRectMake(SCREEN_WIDTH - 33 - 10, SCREEN_HEIGHT - 36 - 10, 36, 36)];
-    [giftBtn setNormalImage:YBNameImage(@"gift")];
-    [giftBtn handlerTouchUpInsideEvent:^(id sender) {
-        [tempSelf rote];
-    }];
-    
-    [giftBtn.layer setShadowColor:[UIColor blackColor].CGColor];
-    [giftBtn.layer setShadowOffset:CGSizeMake(0, 0)];
-    [giftBtn.layer setShadowOpacity:0.5];
-    [giftBtn.layer setShadowRadius:1];
-    [self.view addSubview:giftBtn];
-    
 }
 
 /**
@@ -136,16 +121,6 @@
         // 暂停
         [self.player pause];
     }
-}
-
-- (void)rote{
-    _heartSize = 35;
-    
-    YBHeartFlyView* heart = [[YBHeartFlyView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-    [self.view addSubview:heart];
-    CGPoint fountainSource = CGPointMake(SCREEN_WIDTH-_heartSize, SCREEN_HEIGHT - _heartSize/2.0 - 10);
-    heart.center = fountainSource;
-    [heart animateInView:self.view];
 }
 
 /**
@@ -190,9 +165,6 @@
                                              selector:@selector(moviePlayBackStateDidChange:)
                                                  name:IJKMPMoviePlayerPlaybackStateDidChangeNotification
                                                object:_player];
-    NSTimer *    splashTimer = nil;
-    
-    splashTimer = [NSTimer scheduledTimerWithTimeInterval:0.1  target:self selector:@selector(rote) userInfo:nil repeats:YES];
 }
 
 - (void)removeMovieNotificationObservers {
@@ -287,6 +259,7 @@
 
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self];
+    [self.player shutdown];
     NSLog(@"dealloc %s",__FUNCTION__);
 }
 
